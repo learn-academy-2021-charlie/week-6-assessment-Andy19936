@@ -15,7 +15,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 2. Which RESTful API routes must always be passed params? Why?
 
-  Your answer: Those routes would be show,edit,update and destroy and they need to be passed params so the routes know what instance in the table you are trying to display or edit. 
+  Your answer: Those routes would be show,update and destroy and they need to be passed params so the routes know what instance in the table you are trying to display or edit. 
 
   Researched answer: I believe my above answers are correct and I am not sure about create now that I think about because it is also passed params but in a different sense it is passed params to only allow specific input when adding content to your table but these aren't necessarily used with my restful routes to my knowledge
 
@@ -26,12 +26,12 @@ Then, research the question to expand on your answer. Even if you feel you have 
   Your answer:
   rails g migration creates a migration file where you can add changes to your table
   rails g new model creates a model aka table that stores all your data
-  rails g controller creates and links a controller for your model 
+  rails g controller creates and links a controller for your model and view folder
 
   Researched answer:
 rails g migration adds boiler plate code making a new file so you dont have to go in and figure out how rails wants you to type everything inside the migration file you can add the changes you want to make to your table
 
-rails g model creates boiler plate as referrenced above for adding a model to your app and it takes the params of your table name column_name:'expected input type'
+rails g model creates boiler plate as referrenced above for adding a model migration file to your app and it takes the params of your table name column_name:'expected input type'
 
 rails g controller generates all our boiler plate code and makes a file inside of our controllers folder where we can add all our methods inside the new controller we have just made
 
